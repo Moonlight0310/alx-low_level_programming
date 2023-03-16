@@ -2,11 +2,13 @@
 #include <unistd.h>
 
 /**
- * main - A C program that prints a line to the standard output
- * Return: 1 (Error)
+ * main - Entry point
+ *
+ * Return: Always 1 (error)
  */
 int main(void)
 {
-	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
-	return (1);
+    char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+    write(2, msg, 59);
+    return (1);
 }
