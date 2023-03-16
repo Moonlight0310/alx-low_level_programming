@@ -2,14 +2,14 @@
 #include <unistd.h>
 
 /**
- * main - Entry point of the program
+ * main - Entry point
  *
- * Return: Always 1 (error)
+ * Return: Always 1 (Success)
  */
 int main(void)
 {
-    /* Output string to the standard error stream */
-    write(STDERR_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+    char *str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
+    write(STDERR_FILENO, str, 59);
     return (1);
 }
