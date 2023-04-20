@@ -6,7 +6,7 @@
 	 * @cmp: pointer to func of one of the 3 in main
 	 * Return: 0
 	 */
-	int int_index(int *array, int size, int (*cmp)(int));
+	int int_index(int *array, int size, int (*cmp)(int))
 	{
 		int i;
 
